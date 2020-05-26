@@ -1,0 +1,17 @@
+.tree-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0rpx;
+  box-sizing: border-box;
+}
+.reset-btn {
+  font-size:28rpx;
+  font-weight:400;
+  color: #666666;
+}
+.confirm-btn {
+  font-size:28rpx;
+  font-weight:400;
+  color: #666666;
+  color:rgba(28,145,242,1);
+}

@@ -1,0 +1,26 @@
+.checkbox-box {
+  margin-right: 30rpx;
+}
+.checkbox-box image {
+  width: 42rpx;
+  height: 42rpx;
+  display: block;
+}
+.icon-arrow {
+  width: 39rpx;
+  height: 39rpx;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #666666;
+  margin-bottom: 50rpx;
+}
+.tree-line {
+  width: 30rpx;
+  height: 50rpx;
+  position: absolute;
+  left: -45rpx;
+  bottom: 20rpx;
+}

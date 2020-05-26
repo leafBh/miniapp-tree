@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tree-items": "/component/tree-items/tree-items"
+  }
+}

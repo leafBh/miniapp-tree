@@ -1,0 +1,8 @@
+<!-- <import src ="../treeItem/treeItem.wxml"/> -->
+<view>
+  <view class="tree-btn-wrap">
+    <tex class="reset-btn" catchtap="toReset">重置</tex>
+    <text class="confirm-btn" catchtap="toConfirm">确定</text>
+  </view>
+</view>
+<tree-items model='{{ model }}' hideLineImg="{{ true }}" bind:toggleChecked="toggleChecked" bind:toggleSpread="toggleSpread"></tree-items>

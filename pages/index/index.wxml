@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <tree model='{{ treeList }}' bind:toConfirm="toConfirm" bind:toReset="toReset"></tree>
+</view>
+

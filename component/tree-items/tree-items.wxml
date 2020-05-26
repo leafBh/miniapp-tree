@@ -1,0 +1,22 @@
+<view wx:for='{{ model }}' wx:for-item="val" wx:for-index='index' wx:key="index">
+  <view class="items" data-child="{{val.nodes}}" data-id="{{val.id}}" data-isopen="{{val.isOpen}}" catchtap='toggleSpread'>
+    <view style="position: relative;">
+      <image wx:if="{{!hideLineImg}}" class="tree-line" src="/img/tree-line.png"></image>
+      <view style="display: flex;" data-id="{{val.id}}" data-isChecked="{{val.isChecked}}" catchtap='toggleChecked'>
+        <view class="checkbox-box" wx:if='{{!val.isChecked}}'>
+          <image class="icon-uncheck" src="/img/icon-uncheck.png"></image>
+        </view>
+        <view class="checkbox-box" wx:if='{{val.isChecked}}'>
+          <image class="icon-uncheck" src="/img/icon-checked.png"></image>
+        </view>
+        {{ val.text}}
+      </view>
+    </view>
+    <view>
+      <image wx:if='{{!val.isOpen && val.nodes && val.nodes.length}}' class="icon-arrow" src='/img/arrow.png'></image>
+    </view>
+  </view>
+  <view hidden='{{ !val.isOpen }}' style='padding-left: 72rpx;'>
+    <tree wx:if='{{val.nodes}}' model='{{ val.nodes }}' hideLineImg="{{ false }}" bind:toggleChecked="childToggleChecked" bind:toggleSpread="childToggleSpread"></tree>
+  </view>
+</view>
